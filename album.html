@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>album</title>
+    <style>
+        * {
+            margin: auto;
+            padding: 0 0;
+        }
+
+        h1 {
+            width: 500px;
+            height: 30px;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .box {
+            width: 600px;
+            height: 400px;
+            background-color: rgba(242, 242, 159, 0.975);
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+
+        }
+
+        .smallbox {
+            width: 400px;
+            height: 300px;
+            background-color: brown;
+            overflow: hidden;
+
+        }
+
+        img {
+            width: 400px;
+            height: auto
+        }
+
+        .viewbox {
+            width: 100px;
+            height: 310px;
+            /* background-color: cornflowerblue; */
+            display: flex;
+            overflow-y: hidden;
+        }
+
+        .viewbox ul li {
+            list-style: none;
+            /* display:  */
+
+        }
+
+        .viewbox ul li:hover {
+            margin-top: -1px;
+            margin-left: -2px;
+
+        }
+
+        .viewbox ul li:hover .photo {
+            border: 3px gray solid
+                /* margin:-top:-1px ; */
+        }
+
+        .viewbox ul li .photo {
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h1>My Ablum </h1>
+        <div class="smallbox">
+            <div class="view">
+                <img id="21" src="img/IMG_20200301_100314.jpg" alt="">
+            </div>
+            <div class="view">
+                <img id="22" src="img/IMG_20200313_164446.jpg" alt="">
+            </div>
+            <div class="view">
+                <img id="23" src="img/IMG_20200404_011849.jpg" alt="">
+            </div>
+            <div class="view">
+                <img id="24" src="img/IMG_20200416_093009.jpg" alt="">
+            </div>
+
+        </div>
+        <div class="viewbox">
+            <ul>
+                <li><a href="#21"><img class="photo" src="img/IMG_20200301_100314.jpg" alt=""></a></li>
+                <li><a href="#22"><img class="photo" src="img/IMG_20200313_164446.jpg" alt=""></a></li>
+                <li><a href="#23"><img class="photo" src="img/IMG_20200404_011849.jpg" alt=""></a></li>
+                <li><a href="#24"><img class="photo" src="img/IMG_20200416_093009.jpg" alt=""></a></li>
+            </ul>
+
+
+
+        </div>
+
+    </div>
+</body>
+
+</html>
